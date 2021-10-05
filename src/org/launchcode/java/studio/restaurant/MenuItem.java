@@ -1,5 +1,5 @@
 package org.launchcode.java.studio.restaurant;
-import java.util.Date;
+
 
 public class MenuItem {
     private String itemName;
@@ -7,7 +7,6 @@ public class MenuItem {
     private String description;
     private String category;
     public boolean isItemNew;
-    private Date updatedDate;
 
      public MenuItem(Double price, String description, String category) {
 
@@ -15,14 +14,13 @@ public class MenuItem {
          this.description = description;
          this.category = category;
          this.isItemNew = isItemNew;
-         this.updatedDate = updatedDate;
      }
 
      public String getItem() {
          return itemName;
      }
      public void setDescription(String aDescription) {
-         this.description = description;
+         this.description = aDescription;
      }
 
      public String getCategory() {
@@ -41,13 +39,9 @@ public class MenuItem {
          this.isItemNew = isItemNew;
      }
 
-     public Date getUpdatedDate() {
-         return updatedDate;
-     }
-
-     public void setUpdatedDate(Date aUpdatedDate) {
-         this.updatedDate = updatedDate;
-     }
-
-
+    public boolean isItemNew(MenuItem items) {
+         if(items.isItemNew)
+             System.out.println("New" + items);
+         return isItemNew;
+    }
 }

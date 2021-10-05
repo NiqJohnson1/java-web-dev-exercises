@@ -28,14 +28,30 @@ public class Student {
         return (this.name + " has a GPA of: " + this.gpa);
     }
 
-
+//    Freshman (0-29 credits), Sophomore (30-59 credits), Junior (60-89 credits), or Senior (90+ credits).
      //TODO: Uncomment and complete the getGradeLevel method here:
-//    public String getGradeLevel() {
-//        // Determine the grade level of the student based on numberOfCredits
-//    }
+    public static String getGradeLevel(int numberOfCredits) {
+        // Determine the grade level of the student based on numberOfCredits
+        if(numberOfCredits <= 29) {
+            return ("Student is a Freshman");
+        }
+        if(numberOfCredits <= 59 ) {
+            return ("Student is a Sophomore");
+        }
+        if(numberOfCredits <= 89) {
+            return ("Student is a Junior");
+        }
+        else{
+            return ("Student is a Senior");
+        }
+    }
 
     // TODO: Complete the addGrade method.
     public void addGrade(int courseCredits, double grade) {
+        int totalGrade = 0;
+        int numberOfCredits = courseCredits;
+
+        }
         // Update the appropriate fields: numberOfCredits, gpa
     }
 
