@@ -13,14 +13,23 @@ public class Main {
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name'
         //  field.
          flavors.sort(new FlavorComparator());
-        System.out.println(flavors);
+
 
         // TODO: Use a Comparator class to sort the 'cones' array in increasing order by the 'cost'
         //  field.
 
         cones.sort(new ConeComparator());
-        System.out.println(cones);
+
 
         // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
+        System.out.println(flavors.get(0));
+        System.out.println(flavors.get(1));
+        System.out.println(flavors.get(2));
+        System.out.println(flavors.get(3));
+
+        System.out.println(cones.get(0));
+        System.out.println(cones.get(1));
+        System.out.println(cones.get(2));
+        System.out.println(cones.get(3));
     }
 }
